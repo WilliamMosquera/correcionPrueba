@@ -18,13 +18,10 @@ public class TestEstudiante {
             System.out.println(est);
         }
         nroHombres=porcentajegenero(estudiantes); 
-        System.out.println("El % de hombres X encima del promedio :"+porcentajePromedio(estudiantes, nroHombres, 'm'));
-        System.out.println("El % de mujeres X encima del promedio :"+porcentajePromedio(estudiantes, nroHombres, 'f'));
+        System.out.println("El porcentaje de hombres por encima del promedio es:"+porcentajePromedio(estudiantes, nroHombres, 'm'));
+        System.out.println("El porcentaje de mujeres por encima del promedio es:"+porcentajePromedio(estudiantes, nroHombres, 'f'));
         ne = notaAlta(estudiantes);
-        System.out.println("El estudiante con la mas alta nota es :"+
-                estudiantes[ne].getNombre());
-       
-        
+        System.out.println("El estudiante con la mas alta nota es:"+estudiantes[ne].getNombre());
     }
     public static void llenaEstudiante(Estudiante est[]){
         String nombre;
@@ -35,7 +32,7 @@ public class TestEstudiante {
             System.out.println("Estudiante No "+(i+1));
             System.out.print("Nombre: ");
             nombre = datos.nextLine();
-            System.out.println("Sexo: <<m>><<f>> ");
+            System.out.println("Sexo: <<m>> <<f>> ");
             sexo = datos.next().charAt(0);
             System.out.print("Nota: ");
             nota = datos.nextDouble();
